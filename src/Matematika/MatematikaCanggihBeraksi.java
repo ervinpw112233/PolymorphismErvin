@@ -10,22 +10,21 @@ package Matematika;
  */
 public class MatematikaCanggihBeraksi {
     public static void main(String[] args) {
+        Matematika matematika = new Matematika();
         MatematikaCanggih matematikaCanggih = new MatematikaCanggih();
 
-        // Pengujian metode dengan parameter pecahan
-        System.out.println("Uji Metode dengan Pecahan:");
-        double hasilPertambahan = matematikaCanggih.pertambahan(12.5, 28.7, 14.2);
-        System.out.println("Pertambahan (12.5, 28.7, 14.2): " + hasilPertambahan);
+        // Uji metode di kelas Matematika
+        matematika.pertambahan(5, 3);
+        matematika.pengurangan(10, 4);
+        matematika.perkalian(7, 8);
+        matematika.pembagian(20, 4);
+        matematika.modulus(17, 5);
 
-        // Pengujian overloading
-        System.out.println("\nUji Overloading Pertambahan:");
-        System.out.println("Pertambahan (12.5, 28.7, 14.2): " + matematikaCanggih.pertambahan(12.5, 28.7, 14.2));
-        System.out.println("Pertambahan (12, 28, 14): " + matematikaCanggih.pertambahan(12, 28, 14));
-        System.out.println("Pertambahan (23, 34): " + matematikaCanggih.pertambahan(23, 34));
-        System.out.println("Pertambahan (3.4, 4.9): " + matematikaCanggih.pertambahan(3.4, 4.9));
-
-        // Pengujian metode baru
-        double hasilMetodeBaru = matematikaCanggih.metodeBaru(12.5, 28.7, 14.2);
-        System.out.println("\nMetode Baru (12.5, 28.7, 14.2): " + hasilMetodeBaru);
+        // Uji metode di kelas MatematikaCanggih
+        matematikaCanggih.pertambahan(12.5, 28.7, 14.2);
+        matematikaCanggih.pengurangan(50.0, 20.0, 10.0);
+        matematikaCanggih.perkalian(2.5, 3.0, 4.0);
+        matematikaCanggih.pembagian(100.0, 10.0, 2.0);
+        matematikaCanggih.modulus(25.0, 7.0, 3.0);
     }
 }
