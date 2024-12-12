@@ -9,8 +9,28 @@ package Matematika;
  * @author ASUS
  */
 public class MatematikaCanggih extends Matematika {
-     // Metode khusus untuk MatematikaCanggih
-    public double metodeBaru(double a, double b, double c) {
-        return (a + b + c) / 3.0; // Contoh: menghitung rata-rata
+     public void pertambahan(double a, double b, double c) {
+        double hasil = a + b + c;
+        System.out.println("Hasil pertambahan double: " + hasil);
+    }
+
+    public void pengurangan(double a, double b, double c) {
+        double hasil = a - b - c;
+        System.out.println("Hasil pengurangan double: " + hasil);
+    }
+
+    public void perkalian(double a, double b, double c) {
+        double hasil = a * b * c;
+        System.out.println("Hasil perkalian double: " + hasil);
+    }
+
+    public void pembagian(double a, double b, double c) {
+        double hasil = a / b / c;
+        System.out.println("Hasil pembagian double: " + hasil);
+    }
+
+    public void modulus(double a, double b, double c) {
+        double hasil = a % b % c;
+        System.out.println("Hasil modulus double: " + hasil);
     }
 }
